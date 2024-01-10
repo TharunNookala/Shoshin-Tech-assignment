@@ -18,7 +18,6 @@ const AppLayout = () => {
     if(!data) return <h1>Loading</h1>
   return (
     <div className="w-full h-full flex flex-col gap-5 hero-pattern text-white border-2 ">
-        {console.log(data)}
         <div className='flex flex-col sm:flex-row items-center justify-evenly gap-2 z-30 '>
             <CurrentTempDate currentTempDate={data.current} />
             <MaxMinTemp data={data} />

@@ -4,7 +4,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="h-screen w-screen flex flex-col gap-2">
+    <div className="h-screen w-screen flex flex-col  ">
       <Header />
       <AppLayout />
     </div>

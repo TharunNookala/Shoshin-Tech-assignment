@@ -15,7 +15,7 @@ const GraphMap = ({data}) => {
         else return <img src={cloudy} alt={cloudy} width={50} height={50}/>;;
     }
   return (
-    <div className='flex flex-col sm:flex-row items-start justify-between sm:px-10 '>
+    <div className='w-full flex flex-col sm:flex-row items-start justify-between sm:px-10 '>
         <div className='flex  flex-col items-center justify-around w-full h-full sm:w-4/5 p-2'>
            <div className='flex flex-col justify-around w-full'>
                 <h2 className='text-lg font-medium'>DAILY FORECAST</h2>
@@ -32,7 +32,7 @@ const GraphMap = ({data}) => {
                         })}
                     </div>
            </div>
-            <div className='flex justify-center sm:justify-evenly items-center gap-4 w-full sm:w-1/5 bg-black sm:bg-transparent'>
+            <div className='flex justify-center sm:justify-evenly items-center gap-4 w-full sm:w-1/5  sm:bg-transparent'>
             <div>
                 <p className='text-lg font-medium'>{dateConverter(data.daily.sunrise[0]).split(',')[3]}</p>
                 <img src={sunrise} alt={sunrise} width={90} height={90}/>
@@ -44,8 +44,8 @@ const GraphMap = ({data}) => {
         </div>
         </div>
 
-        <div className='flex items-center justify-center opacity-50 '>
-            <img src={BerlinMap} alt='map' className='rounded-lg' />
+        <div className='flex items-center justify-center opacity-50 sm:m-0 ml-20'>
+            <img src={BerlinMap} alt='map' className='rounded-lg ' />
         </div>
     </div>
   )
