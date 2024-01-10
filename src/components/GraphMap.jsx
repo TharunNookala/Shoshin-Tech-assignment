@@ -11,9 +11,8 @@ const GraphMap = ({data}) => {
     function weatherCodeConverter(code){
         if([77, 71, 73, 75, 85, 86].includes(code)) return <img src={snow} alt={snow} width={50} height={50}/>;
         if([1, 2, 3].includes(code)) return <img src={cloudy} alt={cloudy} width={50} height={50}/>;
-        if([0].includes(code)) return <img src={clearsky} alt={clearsky} width={50} height={50}/>;
-        
-        else return "Not implemented";
+        if([0].includes(code)) return <img src={clearsky} alt={clearsky} width={50} height={50}/>;  
+        else return <img src={cloudy} alt={cloudy} width={50} height={50}/>;;
     }
   return (
     <div className='flex flex-col sm:flex-row items-start justify-between sm:px-10 '>
